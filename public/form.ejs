@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!--<input type="radio" name="1">
-    <input type="number">
-    <input type="checkbox">
-    <input type="range">
-    <input type="color">
-    <input type="date">
-    <input type="time">
-    <input type="email" name="email" placeholder="Email"> -->
-    <!-- <select name="" id="">
-        <option value="">1</option>
-        <option value="">2</option>
-        <option value="">3</option>
-    </select> -->
-    <!-- <p id="mytext">barev</p> -->
-    <!-- <form action="/addinfo" method="post"> -->
-    <!-- <input id="userAge" type="text" type="number" name="age" placeholder="Age"> -->
-    <!-- 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 -->
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <ul>
+    <table class="table1">
+        <tr>
+            <td class="td1">Name</td>
+            <td class="td1">Price</td>
+            <td class="td1">Type</td>
+            <td class="td1">Salelocation</td>
+            <td class="td1">Update</td>
+            <td class="td1">Delete</td>
+        </tr>
         <% info.forEach(function(justOne) { %>
-        <li>
-        Id - <strong><%= justOne.theaterId %></strong> <br>
-        City - <strong><%= justOne.location.address.city %></strong> /
-        State - <strong><%= justOne.location.address.state %></strong> /
-        Zip code - <strong><%= justOne.location.address.zipcode %></strong> /
-        Street - <strong><%= justOne.location.address.street1 %></strong> <br> <br>
-        </li>
-        <% }); %>
-        </ul>
+            <tr>
+                <td class="td1">
+                    <%= justOne.login %>
+                </td>
+                <td class="td1">
+                    <%= justOne.price %>
+                </td>
+                <td class="td1">
+                    <%= justOne.type %>
+                </td>
+                <td class="td1">
+                    <%= justOne.salelocation %>
+                </td>
+                <td><a class="update" href="update/<%= justOne._id %>">Update</a></td>
+                <td><a class="delete" href="delete/<%= justOne._id %>">Delete</a></td>
+            </tr>
+            <% }); %>
+    </table>
 
-    <input id="userName" type="text" name="login" placeholder="Name">
-    <input id="usEmail"type="email" name="email" placeholder="Email">
-    <input id="password" type="password" name="pass" placeholder="Password">
-    <input type="submit" name="Send" placeholder="Send" onclick="getVal()">
-    <!-- </form> -->
+    <input class="input1" id="prodName" type="text" name="login" placeholder="Name">
+    <input class="input1" id="price" type="text" name="price" placeholder="price">
+    <input class="input1" id="type" type="text" name="type" placeholder="type">
+    <input class="input1" id="salelocation" type="text" name="salelocation" placeholder="salelocation">
+    <input class="input2" type="submit" name="Send" placeholder="Send" onclick="getVal()">
     <script src="./script.js"></script>
+
+    <footer>
+
+		<div>
+			<h6>Designet by Arman Isayan</h6>
+		</div>
+	</footer>
+
 </body>
+
 </html>

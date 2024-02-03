@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <form action="/updateData" method="post">
+        <input class="input1" id="prodName" type="text" name="login" placeholder="Name" value = "<%= obj.name %>">
+        <input class="input1" id="price" type="text" name="price" placeholder="price" value = "<%= obj.price %>">
+        <input class="input1" id="type" type="text" name="type" placeholder="type" value = "<%= obj.type %>">
+        <input class="input1" id="salelocation" type="text" name="salelocation" placeholder="salelocation" value = "<%= obj.salelocation %>">
+        <input  type="hidden" name="id"   value = "<%= obj._id %>">
+        <input class="input2" type="submit" name="Send" placeholder="Send" onclick="getVal()">
+    </form>
+</body>
+
+</html>
