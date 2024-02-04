@@ -11,6 +11,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({}))
 
 app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, "public")));
+
 
 
 app.get("/", function (req, res) {
@@ -133,7 +135,7 @@ app.post("/updateData", function (req, res) {
            mongoose.connection.close();
        }
    });
-});   
+});
 
 app.get("/*", function (req, res) {
    res.send("404 not found");

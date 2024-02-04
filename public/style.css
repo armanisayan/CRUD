@@ -1,41 +1,61 @@
+.div1{
+    width: 100%;
+    height: 700px;
+    width: 21%;
+    margin: 0 auto;
+    padding: 40 px;
+    border: 1 px solid black;
+    border-radius: 20px;
+}
+
 .input1 {
-    display: flex;
-    justify-content: space-between;
     margin: 7px;
     width: 250px;
     height: 30px;
     font-family: 'Courier New', monospace;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div3{
+    background-image: url("https://cdn3.photoblogstop.com/wp-content/uploads/2012/07/Sierra_HDR_Panorama_DFX8048_2280x819_Q40_wm_mini.jpg");
+    background-size: cover;
 }
 
 .input2 {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 7px;
-}
-
-.table1{
-    border: 5px solid;
-    border-radius: 7px;
-    border-color: blue;
-    margin: 7px;
+    margin-left: 50px;
+    padding: 10px;
+    background-color: red;
+    border-radius: 20px;
+    width: 175px;
+    font-family: sans-serif,monospace;
 }
 
 .update{
     text-decoration: none;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 .delete{
     text-decoration: none;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 .td1{
     font-family: 'Courier New', monospace;
-    
 }
 
-body{
-    display:flex ;
-    
+
+.img1{
+	height: 30px;
+	width: 30px;
+	margin: 10px;
 }
 
 footer{
@@ -45,4 +65,28 @@ footer{
 	justify-content: space-between;
 	width: 99%;
 	margin: 10px;
+}
+
+header{
+	height: 100px;
+	width: 100%;
+	background-color: rgb(247,255,0);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+a{
+	text-decoration: none;
+}
+
+nav{
+	display: flex;
+	width: 350px;
+	justify-content: space-between;
+}
+
+.div4{
+    width: 20%;
+    margin-left: 40%;
 }
